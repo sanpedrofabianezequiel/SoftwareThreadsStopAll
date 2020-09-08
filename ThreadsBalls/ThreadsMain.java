@@ -46,15 +46,16 @@ class pelotaThread implements Runnable{
 					componente.paint(componente.getGraphics());//Retorna el componente dibujado
 					
 					//Sleep para el for y crear un delay
-					/*
+					
 					try {
 						Thread.sleep(4);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						//e.printStackTrace();
 						System.out.println("Se produzco una interrupcion global");
-						Thread.interrupted();
-					}*/
+						//Thread.interrupted();
+						Thread.currentThread().interrupt();
+					}
 					
 				}
 	}
